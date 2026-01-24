@@ -47,14 +47,14 @@ To run this notebook, you will need the following:
 
 | Model                          | MAE     | RMSE    | MAPE (%) | Notes                                      |
 |--------------------------------|---------|---------|----------|--------------------------------------------|
-| Naïve Baseline                 | 567.98  | 1071.24 | 2.52     | 0.9995 | Benchmark                                  |
-| Dense (Model 1, win=7, h=1)    | 568.95  | 1082.47 | 2.54     | 0.999  | Slightly worse than naïve                  |
-| Dense (Model 2, win=30, h=1)   | 608.96  | 1132.01 | 2.77     | —      | Larger window hurts                        |
-| Dense (Model 3, win=30, h=7)   | 1237.51 | 1425.75 | 5.56     | 2.20   | Poor multi-step performance                |
-| Conv1D (Model 4)               | 570.83  | 1084.74 | 2.56     | —      | Minor local pattern gains                  |
-| LSTM (Model 5)                 | 596.64  | 1128.49 | 2.68     | —      | Overfits on limited data                   |
-| Multivariate Dense (+halving)  | 567.59  | 1077.82 | 2.54     | —      | Small improvement from economic feature    |
-| N-BEATS (Models 7/8)           | 585.50  | 1086.04 | 2.74     | —      | Good decomposition, but not best           |
+| Naïve Baseline                 | 567.98  | 1071.24 | 2.52     | 1.0000 | Benchmark                                  |
+| Dense (Model 1, win=7, h=1)    | 568.95  | 1082.47 | 2.54     | 1.0017  | Slightly worse than naïve                  |
+| Dense (Model 2, win=30, h=1)   | 608.96  | 1132.01 | 2.77     | 1.0722      | Larger window hurts                        |
+| Dense (Model 3, win=30, h=7)   | 1237.51 | 1425.75 | 5.56     | 2.1788   | Poor multi-step performance                |
+| Conv1D (Model 4)               | 570.83  | 1084.74 | 2.56     | 1.0050     | Minor local pattern gains                  |
+| LSTM (Model 5)                 | 596.64  | 1128.49 | 2.68     | 1.0505      | Overfits on limited data                   |
+| Multivariate Dense (+halving)  | 567.59  | 1077.82 | 2.54     | 0.9993      | Small improvement from economic feature    |
+| N-BEATS (Models 7/8)           | 585.50  | 1086.04 | 2.74     | 1.0308      | Good decomposition, but not best           |
 | **Ensemble (Models 9/10)**     | **567.44** | **1069.82** | **2.58** | **0.997** | **Best overall** – beats naïve on all metrics |
 
 ### Final Model Selection and Reasoning
