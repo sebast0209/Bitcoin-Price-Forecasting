@@ -45,7 +45,7 @@ To run this notebook, you will need the following:
 
 ### Performance Comparison
 
-| Model                          | MAE     | RMSE    | MAPE (%)                                    | Notes
+| Model                          | MAE     | RMSE    | MAPE (%)                                    | MASE | 
 |--------------------------------|---------|---------|----------|--------------------------------------------|
 | Naïve Baseline                 | 567.98  | 1071.24 | 2.52     | 1.0000 | Benchmark                                  |
 | Dense (Model 1, win=7, h=1)    | 568.95  | 1082.47 | 2.54     | 1.0017  | Slightly worse than naïve                  |
