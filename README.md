@@ -45,7 +45,7 @@ To run this notebook, you will need the following:
 
 ### Performance Comparison
 
-| Model                          | MAE     | RMSE    | MAPE (%) | Notes                                      |
+| Model                          | MAE     | RMSE    | MAPE (%) | MASE                                     | Notes
 |--------------------------------|---------|---------|----------|--------------------------------------------|
 | Naïve Baseline                 | 567.98  | 1071.24 | 2.52     | 1.0000 | Benchmark                                  |
 | Dense (Model 1, win=7, h=1)    | 568.95  | 1082.47 | 2.54     | 1.0017  | Slightly worse than naïve                  |
@@ -55,7 +55,7 @@ To run this notebook, you will need the following:
 | LSTM (Model 5)                 | 596.64  | 1128.49 | 2.68     | 1.0505      | Overfits on limited data                   |
 | Multivariate Dense (+halving)  | 567.59  | 1077.82 | 2.54     | 0.9993      | Small improvement from economic feature    |
 | N-BEATS (Models 7/8)           | 585.50  | 1086.04 | 2.74     | 1.0308      | Good decomposition, but not best           |
-| **Ensemble (Models 9/10)**     | **567.44** | **1069.82** | **2.58** | **0.997** | **Best overall** – beats naïve on all metrics |
+| **Ensemble (Models 9/10)**     | **567.44** | **1069.82** | **2.58** | **0.997**  |**Best overall** – beats naïve on all metrics |
 
 ### Final Model Selection and Reasoning
 **Selected: Ensemble of Models 9/10** (median aggregation of 10–15 instances of Dense, LSTM, Conv1D, N-BEATS with varied losses: MAE, MSE, MAPE).
